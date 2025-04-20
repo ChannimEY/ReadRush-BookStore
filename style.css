@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bokor&family=Caveat:wght@400..700&family=Moul&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #758bfd;
+  --secondary-color: #f8f8fa;
+  --text-menu: #636363;
+  --text-color: #202124;
+  --padding: 0 115px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+
+}
+body{
+  padding: var(--padding);
+
+}
+.menu {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0 0 60px 0;
+  display: flex;
+  justify-content: start;
+  box-shadow: 8px 3px 10px rgb(194, 191, 191);
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40%;
+  height: 100%;
+  background-color:white;
+}
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 10px;
+}
+.logo .name p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.logo .name #blue {
+  color: var(--primary-color);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+
+}
+.navbar li {
+  list-style: none;
+}
+.navbar ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.span {
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-menu);
+  font-weight: bold;
+}
+.navbar a:hover{
+  color: var(--primary-color);
+}
+#active {
+  color: var(--primary-color);
+}
+.right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+}
+.right .button {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 40px;
+}
+.right .button button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 7px 20px;
+}
+.right .button button i {
+  margin-right: 20px;
+}
+.right .cart {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgb(180, 176, 176);
+  border-radius: 50%;
+  margin-right: 34px;
+  position: relative;
+}
+.right .cart i {
+  font-size: 20px;
+  margin: 18px 0 0 14px;
+  color: rgb(50, 49, 49);
+}
+.numCart {
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 12px;
+  background-color: #ff006f;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
