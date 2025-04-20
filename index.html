@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReadRush | Bookstore </title>
-
+    <title>ReadRush | Bookstore</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta
       name="description"
       content="ReadRush by EY Channim – your go-to online bookstore offering the latest bestsellers, timeless classics, and indie gems. Fast delivery, curated picks, and a love for reading."
@@ -43,7 +43,7 @@
     <!-- Replace with your image URL -->
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./asset/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./asset/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -55,23 +55,35 @@
 
   <body>
     <header>
-<div class="menu">
-  <div class="logo">
-    <div><img src="./asset/logo.png" alt="logo readrush" /></div>
-    <div class="name">
-        <p id="blue">Read</p>
-        <p>Rush</p>
-    </div>
-</div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#" id="active"><span class="span">|</span>Home</a></li>
-      <li><a href="#"><span class="span">|</span>Book</a></li>
-      <li><a href="#"><span class="span">|</span>About</a></li>
-      <li><a href="#"><span class="span">|</span>Contact</a></li>
-    </ul>
-  </nav>
-</div>
+      <div class="menu">
+        <div class="logo">
+          <div>
+            <a href=""><img src="./asset/logo.png" alt="logo readrush" /></a>
+          </div>
+          <div class="name">
+            <p id="blue">Read</p>
+            <p>Rush</p>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="#" id="active"><span class="span">|</span>Home</a>
+            </li>
+            <li>
+              <a href="./Html/Books.html"><span class="span">|</span>Book</a>
+            </li>
+            <li>
+              <a href="./Html/About.html"><span class="span">|</span>About</a>
+            </li>
+            <li>
+              <a href="./Html/Contact.html"
+                ><span class="span">|</span>Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="right">
         <div class="cart">
           <i class="fa-solid fa-cart-plus"></i>
@@ -84,8 +96,315 @@
       </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="des">
+          <h2 class="title">
+            Huge Collection of <span id="span">the books</span>
+          </h2>
+          <p class="description">
+            An online book is a resource in book-like form that is only
+            available to read on the Internet. It differs from the common idea
+            of an e-book.
+          </p>
+          <div class="search">
+            <input type="text" placeholder="Search for books ..." />
+            <button class="btnSearch">Search</button>
+          </div>
+        </div>
+        <div class="pic">
+          <img src="./asset/girl.png" alt="girl" />
+        </div>
+      </section>
+      <section class="category">
+        <div class="namehr">
+          <hr class="hr" />
+          <div class="bgsec">
+            <button class="btnSec">Categories</button>
+          </div>
+          <h3><span class="name"> ReadRush</span> Book Collections</h3>
+        </div>
+        <div class="grid-container">
+          <div
+            class="grid-item action"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-sine"
+          >
+            <h2>Action and Adventure.</h2>
+            <button>➤ View collection</button>
+            <img
+              src="https://www.adventurebook.com/assets/images/afs/homepage/adventures_from_scratch_books/scratch_off_family_adventure_book.png"
+              alt="Action Books"
+            />
+          </div>
+          <div
+            class="grid-item classics"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <h2>Classics.</h2>
+            <button>➤ View collection</button>
+            <img
+              src="https://www.bartsboekje.com/wp-content/smush-webp/2024/10/hex-387x600.png.webp"
+              alt="Classics Books"
+            />
+          </div>
+          <div
+            class="grid-item mystery"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <h2>Detective and Mystery</h2>
+            <button>➤ View collection</button>
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/5ea83a8304ef424807eb6d14/1665408857066-0UJ67R9XYYAC8PGAHKXU/BookBrushImage-2022-9-23-9-4358.png"
+              alt="Mystery Books"
+            />
+          </div>
+          <div
+            class="grid-item bestsellers"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h2>New York times<br />bestsellers</h2>
+            <button>➤ View collection</button>
+            <img
+              src="https://pictures.abebooks.com/inventory/md/md31923898855.jpg"
+              alt="Bestsellers"
+            />
+          </div>
+          <div
+            class="grid-item biographies"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <h2>Biographies.</h2>
+            <button>➤ View collection</button>
+            <img
+              id="img"
+              src="https://www.dosde.com/media/catalog/product/cache/2/small_image/258x271/9df78eab33525d08d6e5fb8d27136e95/a/n/antoni-gaudi-biography-english-book-dosde_978-84-9103-065-2_40-001-01_A01.png"
+              alt="Biographies"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bestSeller">
+        <div class="namehr">
+          <hr class="hr" />
+          <div class="bgsec">
+            <button class="btnSec">Best Seller</button>
+          </div>
+          <h3>This year's top sellers</h3>
+        </div>
+<div class="container">
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package4-1-600x600.jpg" alt="">
+      <div class="action-icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="product-name">Viper in the Window</div>
+    <div class="rating">
+      <div class="stars">
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+      </div>
+      <div class="price">$35</div>
+    </div>
+    <button class="add-to-cart">Add to cart</button>
+  </div>
 
+</div>
+      </section>
+      <section class="cusSay"></section>
+      <section class="offer"></section>
+      <section class="subscribe-section">
+        <div class="badge">Get Discounts</div>
+        <h1>Subscribe to newsletter</h1>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email ..." required />
+          <button type="submit">
+            <span><i class="fa-solid fa-envelope"></i></span> Subscribe
+          </button>
+        </form>
+      </section>
     </main>
     <footer></footer>
+    <button class="goTop">
+      <a href="" target="_top"><i class="fa-solid fa-plane-up"></i></a>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
